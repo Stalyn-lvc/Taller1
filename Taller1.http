@@ -1,0 +1,36 @@
+@Taller1_HostAddress = http://localhost:5247
+
+GET {{Taller1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{Taller1_HostAddress}}/pizza/
+Accept: application/json
+
+###
+
+POST {{Taller1_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "name": "Hawaii",
+    "isGlutenFree": false
+}
+
+###
+
+PUT {{Taller1_HostAddress}}/pizza/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Hawaiian",
+    "isGlutenFree": false
+}
+
+###
+
+DELETE {{Taller1_HostAddress}}/pizza/3
+
+###
